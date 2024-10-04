@@ -1,0 +1,54 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+  overflow-x: hidden;
+  width: 100%;
+  
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Anten;
+    src: url(../font/Anton-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Black.otf);
+}
+  
+.abc{
+    font-family:myFirstFont ;
+}
+.titleAll{
+  font-family:Anten ;
+}
+
+.AllTitle{
+  font-family:Poppins ;
+}
+
+.space{
+  padding:0px 25px;
+}
+
+  /* ..............Pagination css.............  */
+  
+  
+
+  
+  
+
+  
