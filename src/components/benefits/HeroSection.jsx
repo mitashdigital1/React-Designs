@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeroSection = ({ spanTitle, title }) => {
+const HeroSection = ({ spanTitle, title ,desc }) => {
   return (
     <div className="w-full mt-[150px]  md:mb-[100px]  flex  px-[16px]  sm:justify-center sm:items-center">
       <div className=" w-[1174px] mx-auto pt-[20px] px-[20px] lg:px-0 md:pb-[50px] bg-[#FFFFFF] rounded-none sm:rounded-[50px] shadow-[8px_8px_20px_#d4e7ff] ">
@@ -9,7 +9,7 @@ const HeroSection = ({ spanTitle, title }) => {
             {title} <span className="text-[#1B7EF6]">{spanTitle}</span>
           </h2>
           <p className=" text-[12px] sm:text-[16px] md:text-[18px] text-[#565656] text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            {desc}
           </p>
         </div>
       </div>
