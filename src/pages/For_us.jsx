@@ -29,7 +29,7 @@ const For_us = () => {
   };
 
   return (
-    <div className="bg-white  flex flex-col lg:gap-y-[100px] py-10 mt-[100px] px-[16px]">
+    <div className="bg-white   flex flex-col lg:gap-y-[100px] py-10 mt-[100px] px-[16px]">
       <Helmet>
         <title>For Us Page </title>
         <meta
@@ -38,17 +38,19 @@ const For_us = () => {
         />
       </Helmet>
       {/* div start  */}
-      <div className="container  mx-auto flex flex-col md:flex-row items-center rounded-xl px-4">
-        <div className="md:w-1/2 w-full mb-6 md:mb-0 flex justify-center">
+     <div>
+
+      <div className="container pb-[30px] mx-auto flex flex-col lg:flex-row items-center  justify-center lg:justify-between rounded-xl  w-11/12">
+        <div className="  md:max-w-[534px] max-h-[399px] w-full mb-6 md:mb-0 flex justify-center">
           <img
             src={for1}
             alt="Demo"
-            className="rounded-xl w-full h-auto max-w-[534px] max-h-[399px]"
+            className="rounded-xl w-full h-auto "
           />
         </div>
 
-        <div className="md:w-1/2 w-full p-6 flex flex-col justify-center items-start">
-          <h2 className=" text-[28px] sm:text-[42px] AllTitle font-bold text-blue-600 mb-4">
+        <div className="lg:w-1/2 w-full p-6 flex flex-col justify-center items-start">
+          <h2 className=" text-[25px] sm:text-[28px] md:text-[30px] lg:text-[42px] AllTitle font-bold text-blue-600 mb-4">
             Lorem Ipsum
           </h2>
           <p className="text-gray-700 mb-6">
@@ -64,17 +66,17 @@ const For_us = () => {
             </button>
           </a>
         </div>
-      </div>
+      </div> 
 
       {/* div ended  */}
 
       {/* div start  */}
-      <div className="container mx-auto   flex flex-col md:flex-row items-center rounded-xl px-4">
-        {/* Text Section on the left */}
-        <div className="md:w-1/2 w-full p-6 flex flex-col justify-center items-start md:mr-10">
-          <h2 className="text-[28px] sm:text-[42px] AllTitle font-bold text-black mb-4 text-center">
+      <div className="container py-[30px]  mx-auto  w-11/12  flex flex-col lg:flex-row items-center rounded-xl justify-center lg:justify-between h-auto ">
+       
+        <div className="lg:w-1/2 w-full  flex flex-col justify-center items-start ">
+          <h2 className="text-[25px] sm:text-[28px] md:text-[30px] lg:text-[42px] AllTitle font-bold text-black mb-4 text-center">
             loremipsum loremipsu lorem ipsumdo
-            <span className="text-4xl font-bold text-blue-600 mb-4 block">
+            <span className=" font-bold text-blue-600 mb-4 block">
               loremipsum loremipsu lorem ipsumdo
             </span>
           </h2>
@@ -87,52 +89,30 @@ const For_us = () => {
           </p>
         </div>
 
-        {/* Image Section on the right */}
-        <div className="md:w-[534px]    mb-6 md:mb-0 relative">
+     
+        <div className=" md:max-w-[534px] md:max-h-[399px]  mb-6 md:mb-0 relative">
           <img
             src={for2}
             alt="Demo"
-            className="rounded-xl w-full h-auto max-w-[534px] max-h-[399px]"
+            className="rounded-xl w-full h-auto "
           />
           <div className="w-[130px] lightdiv h-[130px] bg-[#0073FF] absolute -bottom-[5%] -right-[4%] blur-2xl opacity-90 -z-1 rounded-full hidden lg:block"></div>
         </div>
-      </div>
+      </div> 
 
       {/* div ended  */}
 
       {/* div start  */}
-      <div className="container mx-auto flex flex-col lg:flex-row items-center rounded-xl px-4">
-        <div className="md:w-1/2 w-full mb-6 md:mb-0 relative flex  justify-center items-center">
-          <img
-            src={formobile}
-            alt="mobile"
-            className="relative z-10 left-[5%] w-[150px] sm:w-[200px] h-auto lg:w-[30%] lg:h-[50%]"
-          />
+      <div className="container mx-auto pt-[20px] sm:pt-[50px] md:pt-[100px] w-11/12 flex-col flex lg:flex-row lg:justify-between    lg:items-start items-center gap-y-[100px] sm:gap-y-[150px]  justify-center" >
+       <div className="md:w-[585px] rounded-3xl md:h-[289px] w-[300px] h-[150px] sm:w-[500px] sm:h-[300px]  bg-blue-400 relative">
+        <h2 className="absolute left-[10%] top-[40%] text-[20px] sm:text-[28px] md:text-[30px] lg:text-[35px] text-white AllTitle">For Banks</h2>
+ <img src={formobile} alt="loading.."  className=" md:w-auto md:h-auto sm:w-[40%] w-[35%] absolute -top-[20%] left-[50%]"/>
+       </div>
 
-          <div
-            className="rounded-xl w-[300px] h-[200px] sm:h-[240px] sm:w-[500px] bg-blue-600 text-white  p-5 absolute" // Center text horizontally
-            style={{
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-
-              padding: "20px",
-              fontSize: "2rem",
-              zIndex: 5,
-            }}
-          >
-            <h2 className="h-full flex justify-center text-[15px] sm:text-[18px] items-center w-[30%]">
-              For Banks
-            </h2>{" "}
-            {/* Ensure text is centered */}
-          </div>
-        </div>
-
-        {/* Text Section on the right */}
-        <div className="md:w-1/2 w-full p-6 flex flex-col justify-center items-start md:ml-10">
-          <h2 className="text-[28px] sm:text-[42px] AllTitle  font-bold text-black mb-4 text-center md:text-left">
+       <div className="lg:w-1/2  lg:pl-[60px] py-[20px] w-full p-6 flex flex-col justify-center items-start md:ml-10">
+          <h2 className="text-[28px] sm:text-[42px] AllTitle  font-bold text-black mb-4 text-center md:text-left ">
             loremipsum loremipsu lorem ipsumdo
-            <span className="text-3xl md:text-4xl font-bold text-blue-600 mb-4 block">
+            <span className=" font-bold text-blue-600 mb-4 block">
               loremipsum loremipsu lorem ipsumdo
             </span>
           </h2>
@@ -144,37 +124,39 @@ const For_us = () => {
             pariatur. App facit id in via facilissima!
           </p>
         </div>
-      </div>
+       
+      </div> 
+
       {/* div ended  */}
 
       {/* div start  */}
 
-      <div className="container mx-auto flex flex-col md:flex-row items-center rounded-xl px-4">
-        {" "}
-        {/* Added horizontal padding */}
-        <div className="md:w-1/2 w-full p-6 flex flex-col justify-center items-center md:items-start md:mr-10">
-          {" "}
-          {/* Center text on mobile */}
-          <h2 className="text-[28px] sm:text-[42px] AllTitle  font-bold text-black mb-4 text-center md:text-left">
+      <div className="container py-[20px]  w-11/12 justify-between mx-auto flex flex-col lg:flex-row items-center rounded-xl ">
+     
+        
+        <div className="lg:w-1/2 w-full  flex flex-col justify-center items-center md:items-start ">
+          
+        
+          <h2 className="text-[25px] sm:text-[28px] md:text-[30px] lg:text-[42px] AllTitle  font-bold text-black mb-4 lg:text-start text-center ">
             loremipsum loremipsu lorem ipsumdo
-            <span className="text-3xl md:text-4xl font-bold text-blue-600 mb-4 block">
+            <span className=" font-bold text-blue-600 mb-4 block">
               loremipsum loremipsu lorem ipsumdo
             </span>
           </h2>
         </div>
-        <div className="md:w-1/2 w-full mb-6 md:mb-0 flex justify-center">
+        <div className=" md:max-w-[534px] max-h-[399px] w-full mb-6 md:mb-0 flex justify-center">
           <img
             src={for4}
             alt="Demo"
-            className="rounded-xl w-full h-auto max-w-[534px] max-h-[399px]"
+            className="rounded-xl w-full h-auto  "
           />
         </div>
-      </div>
+      </div> 
 
       {/* div ended  */}
 
       {/* div start  */}
-      <div className="container mx-auto gap-y-[100px]  py-[50px] md:gap-y-[250px] mt-[100px] flex flex-col lg:flex-row items-center rounded-xl">
+      <div className="container  w-11/12  justify-between mx-auto gap-y-[100px]  py-[50px] md:gap-y-[250px] mt-[100px] flex flex-col lg:flex-row items-center rounded-xl">
         <div className=" w-[300px] h-[120px] sm:w-[500px] sm:h-[240px] bg-blue-400 relative rounded-3xl ">
           <div className="  sm:[622px] sm:h-[460px] absolute -top-[70px] sm:-top-[120px]">
             <img
@@ -185,10 +167,10 @@ const For_us = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2 w-full p-6 flex flex-col justify-center items-start md:ml-10">
-          <h2 className="text-[28px] sm:text-[42px] AllTitle  font-bold text-black mb-4 text-center">
+        <div className="lg:w-1/2 w-full p-6 flex flex-col justify-center items-start md:ml-10">
+          <h2 className=" text-[25px] sm:text-[28px] md:text-[30px] lg:text-[42px] AllTitle  font-bold text-black mb-4 text-center">
             loremipsum loremipsu lorem ipsumdo <span></span>
-            <span className="text-3xl md:text-4xl font-bold text-blue-600 mb-4 text-center">
+            <span className=" font-bold text-blue-600 mb-4 text-center">
               loremipsum loremipsu lorem ipsumdo
             </span>
           </h2>
@@ -197,18 +179,18 @@ const For_us = () => {
       {/* div ended  */}
 
       {/* div start  */}
-      <div className="container mx-auto pt-10 ">
-        {/* Header */}
-        <div className="text-center mb-10">
-          <h1 className="text-2xl md:text-4xl font-bold">
+      <div className="container w-11/12 py-[20px]  mx-auto  ">
+        
+        <div className="text-center py-[20px] mb-10">
+          <h2 className="text-[25px] sm:text-[28px] md:text-[30px] lg:text-[42px] font-bold">
             Act <span className="text-blue-500">loremly</span> and witness the{" "}
             <span className="text-blue-500">ipsums</span>
-          </h1>
+          </h2>
         </div>
 
-        {/* Card Section */}
+       
         <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-4 mt-8">
-          {/* Card 1 */}
+      
           <div className="w-full md:w-1/2 lg:w-1/4 p-4 flex flex-col items-center text-center ">
             <div className="bg-blue-100 rounded-[10px] p-4 mb-4 w-[151px] h-[151px]">
               <img src={mdi_tag} alt="Pricing Icon" className="w-[113px] h-[113px]" />
@@ -238,39 +220,44 @@ const For_us = () => {
 
           
         </div>
-      </div>
+      </div> 
+
       {/* div ended  */}
       <div id="form" ></div>
 
       {/* div start  */}
-      <div className="container mx-auto  px-4   lg:-mt-[70px]">
-        <div className="flex flex-col md:flex-row justify-between">
-          {/* Left Section */}
-          <div className="flex flex-col gap-y-[50px] items-center justify-center md:w-1/2 text-center md:text-left mb-6 md:mb-0" >
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-[#121212] text-center">
+      <div className="container w-11/12  flex-col items-center lg:items-start flex lg:flex-row justify-between mx-auto gap-y-[40px]">
+       
+      <div className="flex flex-col gap-y-[50px]   text-center  mb-6 md:mb-0 lg:justify-start items-center justify-center lg:items-start " >
+            <h2 className="text-[25px] sm:text-[28px] md:text-[30px] lg:text-[42px] lg:w-[62%] font-bold mb-4 text-[#121212] text-center">
               Lorem our ipsum-lorem ado
-            </h1>
+            </h2>
 
-            <div className="bg-gradient-to-r relative from-blue-400 to-blue-200 md:w-80 md:h-56 rounded-lg mx-auto md:mx-0 mb-6 w-[300px] h-[250px]">
+            <div className="bg-gradient-to-r relative from-blue-400 to-blue-200 rounded-3xl  md:mx-0 mb-6 w-[300px] h-[180px] sm:w-[528px] sm:h-[341px]">
+              <div className="w-[85%] h-[95%] absolute left-[10%] bottom-[10%]">
+
               <img
                 src={blank}
                 alt=""
-                className=" absolute -top-[30px] left-[10%] w-[260px] h-[260px] mx-auto pb-5"
+                className=" w-full h-full object-contain"
               />
+              </div>
             </div>
 
-            <p className="text-gray-600">
+            <p className="text-gray-600 lg:w-[50%]">
               exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse
             </p>
           </div>
 
-          {/* from related div  */}
+
+          
           <div
-            className="md:w-[466px] bg-white shadow-lg rounded-lg p-8 mt-10 md:mt-0"
+            className="md:w-[466px]  shadow-gray-400  bg-white shadow-2xl rounded-xl  p-8 mt-10 md:mt-0"
+            
           >
-            <h2 className="text-[28px] sm:text-[42px] AllTitle font-semibold text-center mb-6">
+            <h2 className="text-[28px] sm:text-[28px] AllTitle font-semibold text-center mb-6">
               Request a demo.
             </h2>
 
@@ -409,11 +396,15 @@ const For_us = () => {
               </button>
             </form>
           </div>
-        </div>
-      </div>
+          
+        
+      </div> 
       {/* div ended  */}
 
-      <div className="w-full"></div>
+     
+   {/* puple div  */}
+   </div>
+   
     </div>
   );
 };
